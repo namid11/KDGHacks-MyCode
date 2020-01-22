@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="detail_house.js"></script>
+    <script>
+            let userId = (location.hash).slice(1);
+            fetch_detail(userId);
+    </script>
+    <style>
+        table{
+            width: 100%;
+        }
+        td{
+			background-color: #EEEEEE;
+			border-radius: 8px;
+			text-align: center;
+			height: 40px;
+		}
+		th{
+			background-color: #cccccc;
+			border-radius: 8px;
+			text-align: center;
+			height: 40px;
+		}</style>
+    
+</head>
+<body>
+    <center><h1>詳細</h1></center>
+    <hr>
+    <div class="list">
+        <table id="list_table">
+        </table>
+    </div>
+</body>
+    
+</html>

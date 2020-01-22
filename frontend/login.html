@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ログイン</title>
+  <link rel="stylesheet" href="login.css">   
+</head>
+<body>
+
+  <div class="container">
+    <div id="mail-h">
+      <p>ログイン</p>
+    </div>
+    <form action="/" method="post">
+      <div class="form-item" v-if="sign_type">
+      </div>
+      <div class="form-item">
+        <input type="email" id="id-place" name="userId" placeholder="名前">
+      </div>
+      <div class="form-item">
+        <input type="password" id="pass-place" name="password" minlength="6" placeholder="パスワード">
+      </div>
+      <div class="form-submit">
+        <input type="button" value="LOGIN" onclick="post_login()">
+      </div>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

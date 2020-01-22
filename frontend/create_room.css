@@ -1,0 +1,117 @@
+
+#mail-wrap {
+  /* background: #0004de; */
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+#mail-h {
+  /* background: red; */
+  /* display: flex;
+  justify-content: center;
+  text-align: center; */
+  width: 100%;
+  margin: 0 auto;
+  /* border-bottom: solid 1px gray; */
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #0004de 0%, #bd5aac 100%);
+  border-image-slice: 1;
+}
+
+#mail-h p {
+  font-size: 2.5vw;
+  font-family: cursive;
+
+}
+
+.container {
+  /* background: #af7272; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* position: fixed; */
+  width: 90vw;
+  height: 30vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  /* height: 100%; */
+  /* background: linear-gradient(to left, #333,#eee); */
+}
+
+.container form {
+  /* background: rgb(197, 188, 108); */
+  height: 27vw;
+  vertical-align: center;
+  margin-top: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-item input {
+  width: 100%;
+  font-size: 1.2em;
+  line-height: 30px;
+  background: #fbfbfb;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px #0984e3;
+  text-align: center;
+  transition: .3s;
+}
+
+.form-item {
+  position: relative;
+  margin: 2.2em 0em;
+  padding: 5px;
+}
+
+.form-item:hover input {
+  /* box-shadow: 1px 1px 1px 1px gray; */
+  border-bottom: solid 2px #a24fc3;
+  transition: .3s;
+}
+
+.form-submit {
+  /* background: #bd5aac; */
+  display: inline-block;
+}
+
+.form-submit input {
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  transition: all .2s;
+  background-color: #0984e3;
+  border: 1px solid #b2bec3;
+  color: #dfe6e9;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: 500;
+  height: 36px;
+  line-height: 34px;
+  min-width: 40px;
+  padding: 0 3em;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle
+}
+
+.form-submit:hover input {
+  background-color: #8cc2ec;
+}
+
+
+#image-view {
+  width: 80%;
+  display: none;
+}
